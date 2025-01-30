@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 
 # Step 1: Load Data from JSON
-file_path = "/mnt/data/months.json"
+file_path = "./months.json"
 data = pd.read_json(file_path)
 
 # Convert 'Year' to datetime and extract the year only
