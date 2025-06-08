@@ -23,6 +23,7 @@ anomalies = np.array(yearly_data['Mean'])
 window_size = 5  # Adjust window for better smoothing
 smoothed_anomalies = np.convolve(anomalies, np.ones(window_size)/window_size, mode='valid')
 
+# This is the change
 # Step 3: Matplotlib Visualization
 plt.figure(figsize=(10, 6))
 plt.plot(years[window_size-1:], smoothed_anomalies, label='Smoothed Anomaly', marker='o')
